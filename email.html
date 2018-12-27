@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<title>我的OA - 首页</title>
+		<style type="text/css">
+			body{
+				
+			}
+			i{
+				margin-right:8px;
+			}
+			.user_icon img{
+				width:40px;
+				height:40px;
+				border-radius:50%;
+			}
+			.navbar-nav>.user_icon>a{
+				padding:0;
+				padding-top:5px;
+			}
+			small{
+				float: right;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<!--导航栏-->
+	<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#">OA 系统</a>
+			  </div>
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class=""><a href="index.html"><i class="glyphicon glyphicon-home"></i> 首页</a></li>
+			      <li class=""><a href="user_list.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+			      <li class=""><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+			      <li class=""><a href="tag.html"><i class="glyphicon glyphicon-tag"></i> 标签管理</a></li>
+			      <li class="active"><a href="email.html"><i class="glyphicon glyphicon-envelope"></i> 我的邮箱</a></li>
+			      
+			      <li class="dropdown">
+			       
+			    </ul>
+			    
+			    <ul class="nav navbar-nav navbar-right">
+			      <li class="user_icon"><a href="#"><img src="images/touxiang.jpg" alt="" /></a></li>
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员 <b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> 前台首页</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-tag"></i> 标签管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-envelope"></i> 我的邮箱</a></li>
+			        </ul>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 sidebar panel-group" id="accordion">
+				<!--one-->
+				<div class="panel panel-default">
+				  <div class="panel-heading" data-toggle="collapse"  data-parent="#accordion" href="#collapse_01" >用户管理</div>
+				 	<ul class="list-group collapse in"  id="collapse_01">
+				   	<li class="list-group-item">用户列表</li>
+				   	<li class="list-group-item">用户搜索</li>
+				   	<li class="list-group-item">用户添加</li>
+				    </ul>
+				</div>
+				<!--one-->
+				<div class="panel panel-default">
+				  <div class="panel-heading" data-toggle="collapse"  data-parent="#accordion" href="#collapse_02" >文章管理</div>
+				 	<ul class="list-group collapse"  id="collapse_02">
+				   	<li class="list-group-item">文章列表</li>
+				   	<li class="list-group-item">文章搜索</li>
+				   	<li class="list-group-item">文章添加</li>
+				    </ul>
+				</div>
+				<!--one-->
+				<div class="panel panel-default">
+				  <div class="panel-heading " data-toggle="collapse"  data-parent="#accordion" href="#collapse_03" >评论管理</div>
+				 	<ul class="list-group collapse"  id="collapse_03">
+				   	<li class="list-group-item">评论列表</li>
+				   	<li class="list-group-item">评论搜索</li>
+				   	<li class="list-group-item">评论添加</li>
+				    </ul>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="panel panel-default">
+				  <div class="panel-heading">已读邮件</div>
+				  	 <!-- List group -->
+					  <ul class="list-group">
+					    <li class="list-group-item"><a href="">响应式WEB操作工作原理</a><small>2018/11/17</small></li>
+					    <li class="list-group-item"><a href="">响应式WEB操作工作原理</a><small>2018/11/4</small></li>
+					    <li class="list-group-item"><a href="">响应式WEB操作工作原理</a><small>2018/11/23</small></li>
+					    <li class="list-group-item"><a href="">响应式WEB操作工作原理</a><small>2018/11/7</small></li>
+					    <li class="list-group-item"><a href="">响应式WEB操作工作原理</a><small>2018/11/30</small></li>
+					  </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</body>
+	
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/echart_data.js"></script>
+	<script>
+		
+	</script>
+</html>
+				   	

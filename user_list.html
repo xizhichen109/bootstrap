@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<title>我的OA - 首页</title>
+		<style type="text/css">
+			body{
+				
+			}
+			i{
+				margin-right:8px;
+			}
+			.user_icon img{
+				width:40px;
+				height:40px;
+				border-radius:50%;
+			}
+			.navbar-nav>.user_icon>a{
+				padding:0;
+				padding-top:5px;
+			}
+			.active a{
+				color:#fff;
+			}
+			.user_header{
+				margin:0;
+				margin-bottom:20px;
+			}
+			.user_header p{
+				font-size:18px;
+				margin-bottom:0px;
+			}
+			p{
+				margin:0 0 10px;
+			}
+			.user_list{
+				margin-top:20px;
+			}
+			.user_list>tbody>tr>td{
+				vertical-align:middle;
+				padding-top:3px;
+				padding-bottom:3px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<!--导航栏-->
+	<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#">OA 系统</a>
+			  </div>
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class=""><a href="index.html"><i class="glyphicon glyphicon-home"></i> 首页</a></li>
+			      <li class="active"><a href="user_list.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+			      <li class=""><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+			      <li class=""><a href="tag.html"><i class="glyphicon glyphicon-tag"></i> 标签管理</a></li>
+			      <li class=""><a href="email.html"><i class="glyphicon glyphicon-envelope"></i> 我的邮箱</a></li>
+			      
+			      <li class="dropdown">
+			       
+			    </ul>
+			    
+			    <ul class="nav navbar-nav navbar-right">
+			      <li class="user_icon"><a href="#"><img src="images/touxiang.jpg" alt="" /></a></li>
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员 <b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> 前台首页</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-tag"></i> 标签管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-envelope"></i> 我的邮箱</a></li>
+			        </ul>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<ul class="list-group sidebar">
+					<li class="active list-group-item"><a href="user_list.html">用户管理</a></li>
+					<li class="list-group-item"><a href="user_search.html">用户搜索</a></li>
+					<li class="list-group-item"><a href="">添加用户</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-10">
+				<div class="page-header user_header">
+					<p>用户管理</p>
+				</div>
+				<ul class="nav nav-tabs">
+				  <li class="active"><a href="user_list.html">用户管理</a></li>
+				  <li><a href="user_search.html">用户搜索</a></li>
+				  <li><a href="#" data-toggle="modal" data-target="#myModal">添加用户</a></li>
+				</ul>
+				<table class="table user_list">
+					<tr>
+						<th>id</th>
+						<th>用户名</th>
+						<th>邮箱</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>jenny</td>
+						<td>123@163.com</td>
+						<td>
+							<div class="dropdown">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    用户管理
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="#">修改用户</a></li>
+							    <li><a href="#">删除用户</a></li>
+							    <li><a href="#">禁用用户</a></li>
+							  </ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>2</td>
+						<td>jenny</td>
+						<td>123@163.com</td>
+						<td>
+							<div class="dropdown">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    用户管理
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="#">修改用户</a></li>
+							    <li><a href="#">删除用户</a></li>
+							    <li><a href="#">禁用用户</a></li>
+							  </ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>3</td>
+						<td>jenny</td>
+						<td>123@163.com</td>
+						<td>
+							<div class="dropdown">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    用户管理
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="#">修改用户</a></li>
+							    <li><a href="#">删除用户</a></li>
+							    <li><a href="#">禁用用户</a></li>
+							  </ul>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>4</td>
+						<td>jenny</td>
+						<td>123@163.com</td>
+						<td>
+							<div class="dropdown">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							    用户管理
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							    <li><a href="#">修改用户</a></li>
+							    <li><a href="#">删除用户</a></li>
+							    <li><a href="#">禁用用户</a></li>
+							  </ul>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+		      </div>
+		      <div class="modal-body">
+		        <!--添加用户表单-->
+		        <form action="">
+		        	<label for="">用户名：</label>
+		        	<input type="text" class="form-control" />
+		        	<label for="">密码：</label>
+		        	<input type="text" class="form-control" />
+		        	<label for="">邮箱：</label>
+		        	<input type="text" class="form-control" />
+		        	<form class="form-group">
+		        		<label for="">用户组</label>
+						<select class="form-control">
+							<option value="" selected="selected">初级会员</option>
+							<option value="">限制会员</option>
+							<option value="">中级会员</option>
+							<option value="">高级会员</option>
+						</select>
+		        	</form>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+		        <button type="button" class="btn btn-primary">保存</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>		
+	</body>
+	
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/echart_data.js"></script>
+	<script>
+	
+	</script>
+</html>
+				   	

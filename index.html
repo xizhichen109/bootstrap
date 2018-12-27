@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<title>我的OA - 首页</title>
+		<style type="text/css">
+			body{
+				
+			}
+			i{
+				margin-right:8px;
+			}
+			.user_icon img{
+				width:40px;
+				height:40px;
+				border-radius:50%;
+			}
+			.navbar-nav>.user_icon>a{
+				padding:0;
+				padding-top:5px;
+			}
+			.alert-wrap .alert h3{
+				 margin-top:0;
+			}
+			.alert-wrap .alert p{
+				 padding-bottom:10px;
+			}
+			.my_lady>img{
+				width:150px;
+				height:100px;
+				border-radius:10%;
+				padding-bottom:10px;
+			}
+			.my_cade{
+				padding-bottom:10px;
+			}
+			small{
+				float:right;
+			}
+			
+			
+			
+			.right_img{
+				margin-left:15px;
+				display:block;
+				float:left;
+				width:750px;
+				height:501px;
+			}
+			.right_img>img{
+				width:100%;
+				height:100%;
+			}
+			.data-info{
+				margin-top:20px;
+			}
+			.w64{
+				width:64px;
+				height:64px;
+			}
+			footer{
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+	<!--导航栏-->
+	<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="#">OA 系统</a>
+			  </div>
+			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			      <li class="active"><a href="index.html"><i class="glyphicon glyphicon-home"></i> 首页</a></li>
+			      <li class=""><a href="user_list.html"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+			      <li class=""><a href="content.html"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+			      <li class=""><a href="tag.html"><i class="glyphicon glyphicon-tag"></i> 标签管理</a></li>
+			      <li class=""><a href="email.html"><i class="glyphicon glyphicon-envelope"></i> 我的邮箱</a></li>
+			      
+			      <li class="dropdown">
+			       
+			    </ul>
+			    
+			    <ul class="nav navbar-nav navbar-right">
+			      <li class="user_icon"><a href="#"><img src="images/touxiang.jpg" alt="" /></a></li>
+			      <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">管理员 <b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			          <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> 前台首页</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-user"></i> 用户管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-list-alt"></i> 内容管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-tag"></i> 标签管理</a></li>
+				      <li class=""><a href="#"><i class="glyphicon glyphicon-envelope"></i> 我的邮箱</a></li>
+			        </ul>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
+			
+	<div class="container">
+		<div class="row alert-wrap">
+			<!--第一个警告框-->
+			<div class="col-sm-4">
+				<div class="alert alert-info alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <h3>系统消息</h3>
+				  <p>您有100条未审核的消息</p>
+				  <div>
+				  	<button class="btn btn-info">立即处理</button>
+				  	<button class="btn btn-default">稍后处理</button>
+				  </div>
+				  
+				</div>
+			</div>
+			
+		
+			<!--第二个警告框-->
+		
+			<div class="col-sm-4">
+				<div class="alert alert-danger alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <h3>系统消息</h3>
+				  <p>您有100条未审核的消息</p>
+				  <div>
+				  	<button class="btn btn-danger">立即处理</button>
+				  	<button class="btn btn-default">稍后处理</button>
+				  </div>
+				</div>
+			</div>
+			
+		
+			<!--第三个警告框-->
+			<div class="col-sm-4">
+				<div class="alert alert-success alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <h3>系统消息</h3>
+				  <p>您有100条未审核的消息</p>
+				  <div>
+				  	<button class="btn btn-success">立即处理</button>
+				  	<button class="btn btn-default">稍后处理</button>
+				 </div>
+				</div>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+				  <div class="panel-heading">个人名片</div>
+				  <div class="panel-body">
+				    <div class="row">
+				    	<div class="col-sm-6 my_lady">
+				    		<img src="images/images.jpg"/>
+				    	</div>
+				    	<div class="col-sm-6">
+				    		<p>部门：IT部门</p>
+				    		<p>职位：前端工程师</p>
+				    		<p>技能：网站维护，移动开发</p>
+				    	</div>
+				    	<div class="col-sm-12 my_cade">
+				    		<span class="label label-default">人品好</span>
+							<span class="label label-primary">页面很漂亮</span>
+							<span class="label label-success">设计好</span>
+							<span class="label label-info">大牛</span>
+							<span class="label label-warning">超神</span>
+							<span class="label label-warning">Good</span>
+				    	</div>
+				    </div>
+				  	
+				  	<div class="panel panel-default">
+					  <div class="panel-heading">我的任务</div>
+				  		<ul class="list-group">
+						  <li class="list-group-item"><i class="glyphicon glyphicon-ok"></i>	完成网页设计稿	<small>2018-12-21</small></li>
+						  <li class="list-group-item"><i class="glyphicon glyphicon-ok"></i>	完成网页设计稿	<small>2018-12-22</small></li>
+						  <li class="list-group-item"><i class="glyphicon glyphicon-ok"></i>	完成网页设计稿	<small>2018-12-23</small></li>
+						  <li class="list-group-item"><i class="glyphicon glyphicon-ok"></i>	完成网页设计稿	<small>2018-12-25</small></li>
+						  <li class="list-group-item"><i class="glyphicon glyphicon-ok"></i>	完成网页设计稿	<small>2018-12-26</small></li>
+						</ul>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-8">
+				  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+				
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images/01.jpg" alt="...">
+							<div class="carousel-caption">
+								...
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/02.jpg" alt="...">
+							<div class="carousel-caption">
+								...
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/03.jpg" alt="...">
+							<div class="carousel-caption">
+								...
+							</div>
+						</div>
+					</div>
+				
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+    		</div>
+    		
+		</div>
+		<div class="row data-info">
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+				  <div class="panel-heading">网络数据统计</div>
+				  <div class="panel-body">
+				   <table class="table">
+				   	<tr>
+				   		<th>项目统计</th>
+				   		<th>昨日</th>
+				   		<th>今日</th>
+				   	</tr>
+				   	<tr>
+				   		<td>网络统计</td>
+				   		<td>200</td>
+				   		<td>300</td>
+				   	</tr>
+				   	<tr>
+				   		<td>网络统计</td>
+				   		<td>200</td>
+				   		<td>300</td>
+				   	</tr>
+				   	<tr>
+				   		<td>网络统计</td>
+				   		<td>200</td>
+				   		<td>300</td>
+				   	</tr>
+				   </table>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Panel heading without title</div>
+				  <div class="panel-body">
+				    <ul class="list-group">
+					    <li class="list-group-item"><a href=""><i class="glyphicon glyphicon-ok"></i>	Cras justo odio</a><small>2018/6/25</small></li>
+					    <li class="list-group-item"><a href=""><i class="glyphicon glyphicon-ok"></i>	Dapibus ac facilisis in</a><small>2018/6/24</small></li>
+					    <li class="list-group-item"><a href=""><i class="glyphicon glyphicon-ok"></i>	Morbi leo risus</a><small>2018/6/23</small></li>
+					    <li class="list-group-item"><a href=""><i class="glyphicon glyphicon-ok"></i>	Porta ac consectetur ac</a><small>2018/6/22</small></li>
+					    <li class="list-group-item"><a href=""><i class="glyphicon glyphicon-remove"></i>	Vestibulum at eros</a><small>2018/6/21</small></li>
+					    <li class="list-group-item"><a href=""><i class="glyphicon glyphicon-remove"></i>	Vestibulum at eros</a><small>2018/6/20</small></li>
+					  </ul>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="panel panel-default">
+				  <div class="panel-heading">今日访客统计</div>
+				  <div class="panel-body">
+				   <canvas id="cvs" class="col-sm-12"></canvas>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="panel panel-default  progress-striped">
+				  <div class="panel-heading">Panel heading without title</div>
+				  <div class="panel-body">
+				  	<!--进度条--><p>进度40%</p>
+				  	<div class="progress">
+					  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					    <span class="sr-only">40% Complete (success)</span>
+					  </div>
+					</div><p>进度90%</p>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+					    <span class="sr-only">90% Complete</span>
+					  </div>
+					</div><p>进度60%</p>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					    <span class="sr-only">60% Complete (warning)</span>
+					  </div>
+					</div><p>进度80%</p>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					    <span class="sr-only">80% Complete</span>
+					  </div>
+					</div>
+				  	
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Panel heading without title</div>
+				  <div class="panel-body">
+				    <!-- 栅格 -->
+				    <div class="row">
+				    	<div class="col-sm-7">
+				    		<!--one-->
+				    		<div class="media well">
+							  <a class="pull-left" href="#">
+							    <img class="media-object w64" src="images/a.png" alt="...">
+							  </a>
+							  <div class="media-body">
+							    <h4 class="media-heading">技术支持</h4>
+							    	电脑出问题了，请求支援！！！
+							  </div>
+							</div>
+							<!--two-->
+							<div class="media well">
+								<div class="media-body text-right">
+							    <h4 class="media-heading">技术支持</h4>
+							    	收到！！请稍等~
+							  </div>
+							  <div class="media-right">
+									 <a class="pull-left" href="#">
+									    <img class="media-object w64" src="images/b.png" alt="...">
+									  </a>
+								</div>
+							</div>
+							<!--three-->
+							
+				    		<div class="media well">
+							  <a class="pull-left" href="#">
+							    <img class="media-object w64" src="images/a.png" alt="...">
+							  </a>
+							  <div class="media-body">
+							    <h4 class="media-heading">技术支持</h4>
+							    	电脑开不开机了。。。。。
+							  </div>
+							</div>
+							<!--four-->
+							<div class="media well">
+								<div class="media-body text-right">
+							    <h4 class="media-heading">技术支持</h4>
+							    	收到！！请稍等~
+							  </div>
+							  <div class="media-right">
+									 <a class="pull-left" href="#">
+									    <img class="media-object w64" src="images/b.png" alt="...">
+									  </a>
+								</div>
+							</div>
+				    	</div>
+				    	<div class="col-sm-5">
+				    		<form>
+				    			<div class="form-group">
+				    				<label for="">输入留言内容</label>
+				    				<textarea class="form-control" rows="5"></textarea>
+				    			</div>
+				    			<div class="form-group">
+				    				<button class="btn btn-success" type="button">留言</button>
+				    			</div>
+				    		</form>
+				    		<div class="col-sm-12">
+				    			<div class="panel panel-default">
+								  <div class="panel-heading">团队联系手册</div>
+								  <div class="panel-body">
+								     <ul class="list-group">
+									    <li class="list-group-item">站长：<i class="glyphicon glyphicon-phone"></i>42532454</li>
+									    <li class="list-group-item">技术：<i class="glyphicon glyphicon-phone"></i>23454</li>
+									    <li class="list-group-item">推广：<i class="glyphicon glyphicon-phone"></i>658657</li>
+									    <li class="list-group-item">客服：<i class="glyphicon glyphicon-headphones"></i>2435234 <i class="
+glyphicon glyphicon-phone-alt"></i>5464-336</li>
+									  </ul>
+								  </div>
+								</div>
+				    		</div>
+				    		
+				    	</div>
+				    </div>
+					
+				  </div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer><h5>联系方式：123-123</h5></footer>
+	</body>
+	
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/Chart.js"></script>
+	<script src="js/echart_data.js"></script>
+	<script>
+		$(function(){
+			var cvs = document.getElementById("cvs");
+			var ctx = cvs.getContext('2d');
+			var myLine = new Chart(ctx);
+			myLine.Line(lineChartData,{
+				responsive:true
+			});
+			
+			$('.carousel').carousel({
+				interval:2000
+			})
+		})
+	</script>
+</html>
+				   	
